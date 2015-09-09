@@ -16,4 +16,4 @@ alias journal="cd /home/david/Documents/Journal; cp slug.txt $_now.txt; vim -c '
 That's it. Now, just restart your terminal. Type journal and hit return.
 
 ##Request for help
-Please check out the issues for ways to help refine this script.
+Please check out [issues](https://github.com/davidkneely/journal/issues) for ways you can help refine this script.
