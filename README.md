@@ -8,7 +8,7 @@ Determine where you want to store your journal entries on your file system. Let'
 2. Add the following variable and alias to your `.bashrc` file
 3. Replace `/home/david/Documents/Journal` in the following line with your entriesDirectory.
 ```
-# Create current date variable.
+# Journal
 function journal {
   JOURNAL_DIR=/home/david/Documents/Journal
   _now=$(date +%Y_%m_%d)
