@@ -22,6 +22,19 @@ function journal {
     $EDITOR -c 'startinsert' ${JOURNAL_DIR}/${_now}.txt
   fi
 }
+
+function journal {
+   EDITOR=${EDITOR:-"vim -c startinsert"}
+   JOURNAL_DIR=/Users/davidneely/Documents/
+   _now=$(date +%Y_%m_%d)
+   if [ -f ${JOURNAL_DIR}/${_now}.txt ]; then
+     $EDITOR  ${JOURNAL_DIR}/${_now}.txt
+   else
+     cp ${JOURNAL_DIR}/{slug,$_now}.txt
+     quote | cat - ${JOURNAL_DIR}/${_now}.txt > temp && mv temp ${JOURNAL_DIR}/${_now}.txt
+     $EDITOR -c 'startinsert' ${JOURNAL_DIR}/${_now}.txt
+   fi
+ }
 ```
 
 That's it. Now, just restart your terminal. Type journal and hit return.
