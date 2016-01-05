@@ -1,6 +1,9 @@
 # journal
 A unix/linux command line utility that creates a new journal text file with today's date on your computer.
 
+##Instructions before using:
+This code makes a call to my quote script that pulls a random quote from a list of quotes. The quote is prepended to the journal entry.
+
 ##Instructions to install:
 Determine where you want to store your journal entries on your file system. Let's call this entiresDirectory.
 
